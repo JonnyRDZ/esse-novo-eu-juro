@@ -1,0 +1,31 @@
+escolha = input('''
+Deseja comprar em qual cédula?
+Dólar
+Euro
+Libra
+Kwanza
+Yen 
+''')
+if escolha == 'dolar':
+    valor = int(input('Quantos dólares você deseja comprar? '))
+    valorfinal = round(valor * 5.19, 2)
+    print('Deu no total {} reais'.format(valorfinal))
+elif escolha == 'euro':
+    valor = int(input('Quantos euros você deseja comprar? '))
+    valorfinal = round(valor * 5.22, 2)
+    print('Deu no total {} reais'.format(valorfinal))
+elif escolha == 'libra':
+    valor = int(input('Quantas libras você deseja comprar? '))
+    valorfinal = round(valor * 6.03, 2)
+    print('Deu no total {} reais'.format(valorfinal))
+elif escolha == 'kwanza':
+    valor = int(input('Quantos kwanzas você deseja comprar? '))
+    valorfinal = round(valor * 0.012, 2)
+    print('Deu no total {} reais'.format(valorfinal))
+elif escolha == 'yen':
+    valor = int(input('Quantos yenes você deseja comprar? '))
+    valorfinal = round(valor * 0.037, 2)
+    print('Deu no total {} reais'.format(valorfinal))
+else:
+    print('Cédula não identificada, favor reiniciar.')
+
